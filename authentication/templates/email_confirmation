@@ -1,0 +1,8 @@
+{% autoescape off %}
+Welcome to djnago Login
+Hello{{ name}}
+please confirm your email by using below link.
+
+link: http://{{ domain }}{% url 'activate' uidb64=uid token=token%}
+
+{% endautoescape %}
