@@ -68,7 +68,7 @@ def signup(request):
         #welcome email
 
         subject = "welcome to login"
-        message ="hello"+ myuser.first_name + "\n Thank you for visiting \n we have sent you a confirmation email \n Please confirm \n\n thanking you"
+        message ="hello"+ myuser.first_name + "\n Thank you for visiting \n\n Thanking you \n\n Pallavi"
         from_email =settings.EMAIL_HOST_USER
         to_list = [myuser.email]
         send_mail(subject, message, from_email, to_list, fail_silently=True)
